@@ -68,7 +68,7 @@ nav {
 }
 
 nav > a {
-
+    padding: 10px;
 }
 
 main {
@@ -81,6 +81,26 @@ main {
 main > section {
     margin-top: 100px;
     width: 40vw;
+}
+
+.projects {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+summary {
+    overflow: hidden;
+    height: 35vh;
+    flex: 1 0 40%;
+}
+
+.screenshot {
+    width: 100%;
+    object-fit: cover;
+}
+
+summary:last-child {
+    flex: 1 1 100%;
 }
 
 #contact-box {
