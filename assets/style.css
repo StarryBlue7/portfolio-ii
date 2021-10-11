@@ -1,15 +1,21 @@
 :root {
     --header-font: 'Satisfy';
     --content-font: 'Montserrat';
+    --main-text-color: white;
 }
 
 body {
-    background-image: linear-gradient(150deg, black, midnightblue);
+    background-image: linear-gradient(150deg, midnightblue, black);
     min-height: 100vh;
     scroll-behavior: smooth;
-    color: white;
+    color: var(--main-text-color);
     font-size: 36px;
     font-family: var(--content-font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-text-color);
 }
 
 #particles-js {
@@ -30,8 +36,9 @@ canvas {
 header {
     display: flex;
     flex-direction: column;
-    top: 50%;
-    transform: translateY(-50%);
+    align-items: center;
+    margin-top: 30vh;
+    overflow: hidden;
 }
 
 .profile-img {
@@ -44,4 +51,27 @@ h1, h2 {
 
 h1 {
     font-size: 350%;
+}
+
+h3 {
+    font-size: 90%;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav > a {
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 40vw;
 }
