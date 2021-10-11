@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(150deg, midnightblue, black);
+    background-image: linear-gradient(150deg, black, rgb(18, 26, 99), black);
     min-height: 100vh;
     scroll-behavior: smooth;
     color: var(--main-text-color);
@@ -21,7 +21,7 @@ a {
 #particles-js {
     position: absolute;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -37,7 +37,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30vh;
+    margin-top: 25vh;
     overflow: hidden;
 }
 
@@ -53,6 +53,10 @@ h1 {
     font-size: 350%;
 }
 
+h2 {
+    font-size: 200%;
+}
+
 h3 {
     font-size: 90%;
 }
@@ -60,6 +64,7 @@ h3 {
 nav {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 nav > a {
@@ -67,11 +72,37 @@ nav > a {
 }
 
 main {
+    margin-top: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section {
+main > section {
+    margin-top: 100px;
     width: 40vw;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 400px;
+}
+
+.social-link {
+    text-align: center;
+}
+
+.social-icon {
+    height: 100px;
+    width: 100px;
+    filter: invert(1);
+    padding: 20px 20px 0 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 80%;
+    bottom: 0;
+    align-self: center;
 }
