@@ -47,6 +47,7 @@ header {
 
 h1, h2 {
     font-family: var(--header-font);
+    text-align: center;
 }
 
 h1 {
@@ -83,9 +84,18 @@ main > section {
     width: 40vw;
 }
 
-.projects {
+p {
+    padding-bottom: 30px;
+}
+
+#skills > ul, #resume > p {
+    text-align: center;
+}
+
+#projects {
     display: flex;
-    flex-flow: row-reverse wrap;
+    flex-flow: row-reverse wrap-reverse;
+    gap: 30px;
 }
 
 summary {
@@ -124,5 +134,6 @@ footer {
     text-align: center;
     font-size: 80%;
     bottom: 0;
+    margin-bottom: 30px;
     align-self: center;
 }
