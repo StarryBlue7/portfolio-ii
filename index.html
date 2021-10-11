@@ -11,8 +11,79 @@
 </head>
 
 <body>
-    
-    <div id="particles-js"></div>
+    <header>
+        <img alt="Vince Lee" class="profile-img" src="assets/images/profile.png" />
+        <h1>Vince Lee</h1> 
+        <h3>Full Stack Web Developer</h3>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#resume">Résumé</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Having grown up in a household of web developers, web design has always been a part of my life, if only at times as side projects here and there.
+                Even while pursuing a degree in chemistry, I was additionally trained in graphic design, Python, and computational chemistry. 
+            </p>
+            <p>
+                Of course, as luck would have it, I ended up working for a web-based cloud biotech company, Emerald Cloud Labs, where development skills were once again at the forefront.
+            </p>
+            <p>
+                So, why fight the inevitable? I'm now pursing a career in web and software development.
+            </p>
+        </section>
+        
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <section class="projects row-reverse">
+
+                <summary>
+                    <a target=_blank href="https://starryblue7.github.io/accessibility-code-refactor/">
+                        <h4>Accessibility Code Refactorization</h4>
+                        <img class="screenshot" alt="Accessibility code refactorization page" src="./assets/images/accessibility-code-refactor-site.PNG" />
+                    </a>
+                </summary>
+                
+            </section>
+        </section>
+        
+        <section id="resume">
+            <h2>Résumé + CV</h2>
+            <p><a target=_blank href="assets/CV_VinceLee_2021.pdf">Click here to open my CV.</a></p>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <section id="contact-box" class="projects">
+                <a class="social-link" target=_blank href="mailto:StarryBlue7@gmail.com">
+                    <img alt="Email" class="social-icon" src="./assets/images/email-logo.png" />
+                    <h5>E-mail</h5>
+                </a>
+                
+                <a class="social-link" target=_blank href="https://github.com/StarryBlue7">
+                    <img alt="GitHub" class="social-icon" src="./assets/images/github-logo.png" />
+                    <h5>GitHub</h5>
+                </a>
+                
+                <a class="social-link" target=_blank href="https://www.linkedin.com/in/vince-lee">
+                    <img alt="LinkedIn" class="social-icon" src="./assets/images/linkedin-logo.png" />
+                    <h5>LinkedIn</h5>
+                </a>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Vince Lee 2021
+    </footer>
+
+    <div aria-hidden="true" id="particles-js"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
