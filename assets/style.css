@@ -142,6 +142,12 @@ summary {
     z-index: 1;
 }
 
+summary > h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .screenshot {
     width: 100%;
     object-fit: cover;
@@ -188,6 +194,10 @@ footer {
 @media screen and (max-width: 1600px) {    
     main > section {
         width: 50vw;
+    }
+
+    summary > h4 {
+        font-size: 80%;
     }
 }
 
