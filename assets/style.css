@@ -11,6 +11,7 @@ body {
     color: var(--main-text-color);
     font-size: 36px;
     font-family: var(--content-font);
+    z-index: -2;
 }
 
 a {
@@ -23,19 +24,20 @@ a {
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
 }
 
 canvas .particles-js-canvas-el {
-    min-height: 100vh;
+    /* min-height: 100vh;
     min-width: 100vw;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 50%;
+    left: 50%; */
+    z-index: -1;
 }
 
 header {
