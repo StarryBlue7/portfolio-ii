@@ -72,6 +72,7 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    z-index: 1;
 }
 
 nav > a {
@@ -99,12 +100,13 @@ main {
 }
 
 main > section {
-    margin-top: 200px;
+    padding-top: 200px;
     width: 40vw;
 }
 
 p {
     padding-bottom: 30px;
+    line-height: 50px;
 }
 
 #skills {
@@ -115,6 +117,7 @@ p {
 }
 
 #skills > ul {
+    padding-top: 20px;
     text-align: center;
     display: flex;
     flex-flow: row wrap;
@@ -137,11 +140,13 @@ summary {
     overflow: hidden;
     height: 35vh;
     flex: 1 0 40%;
+    border-radius: 5px;
 }
 
 .screenshot {
     width: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 summary:last-child {
@@ -167,7 +172,7 @@ summary:last-child {
     height: 100px;
     width: 100px;
     filter: invert(1);
-    padding: 20px;
+    padding-top: 20px;
 }
 
 footer {
@@ -176,4 +181,43 @@ footer {
     bottom: 0;
     margin-bottom: 30px;
     align-self: center;
+}
+
+@media screen and (max-width: 1600px) {    
+    main > section {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 768px) {    
+    body {
+        font-size: 24px;
+    }
+
+    .profile-img {
+        width: 300px;
+    }
+
+    main > section {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav > a {
+        text-align: center;
+        flex: 1 0 25%;
+    }
+
+    main {
+        gap: 200px;
+    }
+    
+    main > section {
+        width: 90vw;
+    }
+    
+    #contact-box {
+        gap: 10px;
+    }
 }
